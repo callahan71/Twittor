@@ -8,7 +8,8 @@ const INMUTABLE_CACHE   = 'inmutable-v1';
 
 // Creamos el array con el App Shell
 const APP_SHELL = [
-    '/', //necesario para que funcione la app
+    // para produccion, comento la siguiente linea
+    // '/', //necesario para que funcione la app en desarrollo
     'index.html',
     'css/style.css',
     'img/favicon.ico',

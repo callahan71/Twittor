@@ -1,8 +1,21 @@
 
 // Si existe soporte para el SW, lo registro
 
+// Obtengo la url completa del navegador
+var url = window.location.href;
+// Establezco el path de la app en produccion
+var swLocation = '/twittor/sw.js'; //produccion
+
+
 if (navigator.serviceWorker){
-    navigator.serviceWorker.register('/sw.js');
+
+    // Compruebo si estoy en desarrollo
+    if (url.includes('localhost')) {
+        swLocation = '/sw.js'; //desarrollo
+    }
+
+    // Registro el SW
+    navigator.serviceWorker.register(swLocation);
 }
 
 
