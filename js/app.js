@@ -4,7 +4,7 @@
 // Obtengo la url completa del navegador
 var url = window.location.href;
 // Establezco el path de la app en produccion
-var swLocation = '/twittor/sw.js'; //produccion
+var swLocation = '/Twittor/sw.js'; //produccion
 
 
 if (navigator.serviceWorker){
