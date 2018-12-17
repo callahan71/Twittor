@@ -6,7 +6,6 @@ var url = window.location.href;
 // Establezco el path de la app en produccion
 var swLocation = '/Twittor/sw.js'; //produccion
 
-
 if (navigator.serviceWorker){
 
     // Compruebo si estoy en desarrollo
@@ -17,8 +16,6 @@ if (navigator.serviceWorker){
     // Registro el SW
     navigator.serviceWorker.register(swLocation);
 }
-
-
 
 
 
